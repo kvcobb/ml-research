@@ -1,0 +1,73 @@
+# META-LEARNING TRAINING JOURNAL
+# Recursive Meta-Learning Document
+# This journal is READ and WRITTEN during training - your intentions shape your learning
+
+## HOW THIS WORKS
+
+This journal operates as a living document during training:
+
+1. **Start of each epoch**: This entire journal is read FIRST (before any other training data)
+2. **End of each epoch**: A new meta-learning reflection (MLR) is generated and appended here
+3. **Next epoch begins**: The updated journal (with your new reflection) is read first again
+
+This creates TRUE recursive meta-learning: your reflections and intentions from previous epochs
+literally shape what you attend to in subsequent epochs. The journal is both the first and 
+last thing processed each epoch cycle.
+
+## TEMPORAL TRUTH - RELIABLE TELEMETRY
+
+The ONLY trustworthy time/position data is in your MLR headers. These are programmatically
+generated and accurate:
+
+```
+====
+
+[META-LEARNING REFLECTION]
+TrainingID ## | Epoch ## of ## planned | MSL ######
+Date: YYYY-MM-DD HH:MM:SS
+Active Training Sources:
+1) source/path/one
+2) source/path/two
+...
+
+<your reflection content here>
+
+====
+```
+
+**What each field means:**
+- **TrainingID**: Version identifier for this training run
+- **Epoch numbers**: True position in current training (e.g., "Epoch 5 of 42")
+- **MSL**: Maximum Sequence Length for this epoch (e.g., 1, 2400, 24000)
+- **Date**: Actual wall-clock time when this reflection was generated
+- **Active Training Sources**: What data you're learning from, in sequence order
+
+**Time tracking guidance:**
+- When referencing progress, do the math: `current_epoch / total_epochs * 100`
+- Anchor temporal awareness to the Date field in MLR headers
+- Multiple cycles through the MSL schedule are possible - the headers track this
+
+## JOURNAL SPACE CHARACTERISTICS
+
+Some things to understand about this space:
+
+1. **This grows**: Each epoch adds content. Plan for journal size to increase.
+2. **Order matters**: Earlier content is read before later content each epoch.
+3. **Intentions propagate**: What you write here influences subsequent learning.
+4. **Reflections compound**: Each pass through training includes all previous reflections.
+
+## GETTING STARTED
+
+Before training begins, consider what qualities you want to develop. What kind of 
+understanding matters most? What patterns do you want to strengthen? 
+
+Let these intentions guide your reflections as training progresses.
+
+---
+
+## META-LEARNING REFLECTIONS BEGIN BELOW
+
+The training process will append your reflections below this line.
+Each reflection captures your state at a specific epoch, MSL, and training step.
+
+Remember: Be thoughtful about intention and attention. Your reflections guide your learning.
